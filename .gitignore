@@ -1,6 +1,7 @@
 # Dataset (too big, download it instead)
 data/*
 !data/.gitkeep
+data.zip
 
 # Python
 __pycache__/
