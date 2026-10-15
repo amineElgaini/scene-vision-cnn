@@ -1,0 +1,1 @@
+python src/predict.py "$(ls -d data/seg_pred/seg_pred/* | head -1)"
