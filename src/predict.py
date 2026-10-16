@@ -12,11 +12,12 @@ CLASSES_PATH = Path("models/class_names.json")
 
 
 def load_image(path):
-    img = tf.io.read_file(str(path))
+    if not tf.is_tensor(path):
+        path = str(path)
+    img = tf.io.read_file(path)
     img = tf.image.decode_jpeg(img, channels=3)
     img = tf.image.resize(img, (IMG_SIZE, IMG_SIZE))
     return img / 255.0
-
 
 def predict_image(path, model, class_names):
     img = tf.expand_dims(load_image(path), 0)
