@@ -7,3 +7,4 @@ seaborn==0.13.2
 scikit-learn==1.9.1
 pillow==12.2.0
 pytest==9.1.1
+streamlit==1.63.0
