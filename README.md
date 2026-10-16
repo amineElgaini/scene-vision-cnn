@@ -238,7 +238,7 @@ flowchart LR
 ```
 .
 ├── data/            # dataset (not in Git) and data/splits/ CSV files
-├── notebooks/       # exploration, preprocessing, CNN, evaluation
+├── notebooks/       # 01 exploration, 02 preprocessing + CNN + training + evaluation
 ├── src/             # prepare_data.py, train.py, predict.py
 ├── models/          # final_model.keras, class_names.json
 ├── reports/         # curves, confusion matrix, comparison, examples
